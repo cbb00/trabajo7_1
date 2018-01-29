@@ -9,13 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-
 <!-- Navigation bar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <a class="navbar-brand" href="#">Restaurants</a>
@@ -35,8 +34,8 @@
                 <a class="nav-link" href="test">Enllaç 2</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Cercar" aria-label="Cercar">
+        <form class="form-inline my-2 my-lg-0" action="cerca">
+            <input class="form-control mr-sm-2" type="text" placeholder="Cercar" name="q" aria-label="Cercar">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cercar</button>
         </form>
     </div>
@@ -52,6 +51,11 @@
             <p><a class="btn btn-primary btn-lg" href="test" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
+
+    <form action="prova" method="GET">
+        Nom: <input type="text" name="nom">
+        <input type="submit" value="Mostrar">
+    </form>
 
     <div class="container">
         <!-- Example row of columns -->

@@ -13,8 +13,33 @@
     <servlet-name>TestServlet</servlet-name>
     <servlet-class>com.iesemilidarder.restaurants.web.TestServlet</servlet-class>
   </servlet>
+    <servlet>
+        <servlet-name>ProvaServlet</servlet-name>
+        <servlet-class>com.iesemilidarder.restaurants.web.ProvaServlet</servlet-class>
+    </servlet>
+  <servlet>
+    <servlet-name>MostrarRestaurantsServlet</servlet-name>
+    <servlet-class>com.iesemilidarder.restaurants.web.MostrarRestaurantsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CercaServlet</servlet-name>
+    <servlet-class>com.iesemilidarder.restaurants.web.CercaRestaurantsServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
+    <servlet-name>CercaServlet</servlet-name>
+    <url-pattern>/cerca</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProvaServlet</servlet-name>
+    <url-pattern>/prova</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MostrarRestaurantsServlet</servlet-name>
+    <url-pattern>/mostrarrestaurants</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
     <servlet-name>TestServlet</servlet-name>
     <url-pattern>/test</url-pattern>
   </servlet-mapping>
+
 </web-app>
