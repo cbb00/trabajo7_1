@@ -16,8 +16,8 @@ public class TestServlet extends HttpServlet {
         // Set response content type
         response.setContentType("text/html");
 
-        // Actual logic goes here.
-        PrintWriter out = response.getWriter();
+        // A   ctual logic goes here.
+            PrintWriter out = response.getWriter();
         out.println("<h1>Test Servlet</h1>");
     }
 }
